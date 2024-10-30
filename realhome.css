@@ -1,0 +1,174 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background-color: #dfdfdf;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+button{
+  background-color: #05f772;
+  border: solid #05f772 5px;
+  width: 130px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+button:hover {
+  background-color: #04d865;
+  border: solid #04d865 5px;
+}
+.mainheader {
+  background-color: rgb(63, 186, 52);
+  size: 200px;
+  padding: 0px;
+}
+.mainfooter {
+  background-color: rgb(63, 186, 52);
+  size: 10vw;
+  padding: 0px;
+  margin-top: auto !important;
+  margin: 0xp;
+}
+.title {
+  font-size:5vw;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 90px;
+  color: #05f772;
+  text-shadow: 0 10px 7px rgba(0,0,0,0.4),0 -5px 1px #fff;
+  letter-spacing: -5px;
+  font-style: italic;
+  text-align-last: center;
+  margin: 0px !important;
+}
+.title:hover {
+  animation: glitch .3s linear infinite;
+  cursor: pointer;
+}
+  
+  @keyframes glitch {
+    0% {transform: translate(0);}
+    20% {transform: translate(-2px, 2px);}
+    40% {transform: translate(-2px, -2px);}
+    60% {transform: translate(2px, 2px);}
+    80% {transform: translate(2px, -2px);}
+    100% {transform: translate(0);}
+  }
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.sidebar {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: -webkit-sticky; /* For Safari i think */
+  position: sticky;
+  top: 10px;
+}
+.mainbody {
+  background-color: white;
+  border: solid darkgray 2px;
+  border-radius: 10px;
+  width: 70%;
+  margin-right: 10px;
+  padding: 3px;
+}
+.navigation {
+  background-color: white;
+  border: solid darkgray 2px;
+  border-radius: 10px;
+  height: auto;
+  min-height: 50px;
+}
+.trending {
+  background-color: white;
+  border: solid darkgray 2px;
+  border-radius: 10px;
+  height: auto;
+  min-height: 260px;
+  padding: 10px;
+}
+.ads {
+  background-color: white;
+  border: solid darkgray 2px;
+  border-radius: 10px;
+  height: auto;
+  min-height: 150px;
+}
+.loginwraper {
+  background-color: white;
+  border: solid darkgray 4px;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+input{
+  margin: 10px;
+  padding: 4px;
+  width: 40%;
+  border: solid gray 3px;
+  border-radius: 5px;
+}
+textarea {
+  margin: 10px;
+  padding: 4px;
+  width: 40%;
+  border: solid gray 3px;
+  border-radius: 5px;
+  resize: none;
+  height: 100px;
+}
+select {
+  margin: 10px;
+  padding: 4px;
+  width: 40%;
+  border: solid gray 3px;
+  border-radius: 5px;
+}
+.infofooter {
+  display: flex;
+  flex: 1;
+}
+.infofooterextra {
+  margin-right: 100px;
+}
+.contactinfo {
+  margin: 0px;
+  padding: 0px;
+}
+.contactinfo {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.sociallinks {
+  display: flex;
+  justify-content: left;
+  gap: 10px; 
+  padding: 10px 0;
+}
+.sociallinks a {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%; 
+  padding: 9px;
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+  color: Black;
+}
+.sociallinks a:hover {
+  background-color: rgb(33, 45, 223);
+}
+.sociallinks img {
+  width: 15px;
+  height: 15px;
+}
